@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "850662827241",
-    "project_id": "computerize1",
-    "storage_bucket": "computerize1.appspot.com"
+    "project_number": "251892559286",
+    "project_id": "csimplify-5adf4",
+    "storage_bucket": "csimplify-5adf4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:850662827241:android:3bf420ba5d89d23a40bc78",
+        "mobilesdk_app_id": "1:251892559286:android:e8752e6a41baba3835a517",
         "android_client_info": {
           "package_name": "com.abisayo.computerize1"
         }
       },
       "oauth_client": [
         {
-          "client_id": "850662827241-tkvm8g5lnas6tsl4d4ffouf4ilajnfsd.apps.googleusercontent.com",
+          "client_id": "251892559286-1fmp3n2hasan9fhis6k8nj7ka27pvkit.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAU5iE0WzPDgddGR9lic0o59NW4KIByZ5A"
+          "current_key": "AIzaSyDO5pQbQ2Mul_c1aOg1ufCCwK59VP0SVrA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "850662827241-tkvm8g5lnas6tsl4d4ffouf4ilajnfsd.apps.googleusercontent.com",
+              "client_id": "251892559286-1fmp3n2hasan9fhis6k8nj7ka27pvkit.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
