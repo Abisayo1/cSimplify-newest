@@ -56,8 +56,7 @@ class TopicsActivity : AppCompatActivity() {
         val sharedPreferences = getSharedPreferences("sharedPrefs", Context.MODE_PRIVATE)
         val savedInt = sharedPreferences.getInt("score", 0)
         val savedTopic = sharedPreferences.getString("topic", "")
-
-        Toast.makeText(this, "$savedInt and $savedTopic", Toast.LENGTH_LONG).show()
+        
 
         recyclerView = findViewById(R.id.recycler)
         recyclerView.layoutManager = LinearLayoutManager(this)
