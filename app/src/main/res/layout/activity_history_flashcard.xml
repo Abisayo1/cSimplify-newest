@@ -20,6 +20,7 @@
                 android:id="@+id/textView10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="20sp"
                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel velit vel urna posuere malesuada. Praesent dapibus, ex euismod malesuada molestie, ligula est malesuada elit, eget rutrum neque magna eget eros. Sed euismod, risus sit amet hendrerit feugiat, elit ligula placerat nibh, at malesuada nulla magna vel risus. Praesent id arcu vitae risus gravida bibendum."
                 android:padding="10dp" />
 

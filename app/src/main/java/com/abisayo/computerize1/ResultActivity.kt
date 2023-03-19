@@ -38,7 +38,7 @@ class ResultActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

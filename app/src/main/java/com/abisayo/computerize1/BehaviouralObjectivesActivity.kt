@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.abisayo.computerize1.Algorithms.AlgorithmSubTopicActivity
+import com.abisayo.computerize1.Flowcharts.FlowchartsSubTopicActivity
 import com.abisayo.computerize1.data.Constants
 import com.abisayo.computerize1.databinding.ActivityBehaviouralObjectivesBinding
 import com.abisayo.computerize1.databinding.ActivityHistoryFlashcardBinding
@@ -26,13 +27,15 @@ class BehaviouralObjectivesActivity : AppCompatActivity() {
             binding.flowDisList.text = getString(R.string.algo_beh)
             binding.button.setOnClickListener {
                 val intent = Intent(this, AlgorithmSubTopicActivity::class.java)
+                intent.putExtra(Constants.TOPIC, "$topic")
                 startActivity(intent)
             }
         } else if (topic == "Flowcharts") {
 
             binding.flowDisList.text = getString(R.string.flow_beh)
             binding.button.setOnClickListener {
-                val intent = Intent(this, FlowchartSubtopicAdapter::class.java)
+                val intent = Intent(this, FlowchartsSubTopicActivity::class.java)
+                intent.putExtra(Constants.TOPIC, "$topic")
                 startActivity(intent)
 
             }

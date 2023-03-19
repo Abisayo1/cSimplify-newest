@@ -57,6 +57,8 @@ class TopicsActivity : AppCompatActivity() {
         val savedInt = sharedPreferences.getInt("score", 0)
         val savedTopic = sharedPreferences.getString("topic", "")
 
+        Toast.makeText(this, "$savedInt and $savedTopic", Toast.LENGTH_LONG).show()
+
         recyclerView = findViewById(R.id.recycler)
         recyclerView.layoutManager = LinearLayoutManager(this)
 
@@ -102,7 +104,7 @@ class TopicsActivity : AppCompatActivity() {
                         startActivity(intent)
 
                     }
-                    1 -> { if (savedInt>=6 && savedTopic == "Algorithms") {
+                    1 -> { if (savedInt>=6 && savedTopic == "Algorithms" || savedInt>=6 && savedTopic == "Flowcharts") {
                         val intent =
                             Intent(this@TopicsActivity, BehaviouralObjectivesActivity::class.java)
                         intent.putExtra(Constants.TOPIC, "Flowcharts")

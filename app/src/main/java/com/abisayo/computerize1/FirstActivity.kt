@@ -9,6 +9,7 @@ import android.view.WindowManager
 import com.abisayo.computerize1.Games.GameClaraActivity
 import com.abisayo.computerize1.data.Constants
 import com.abisayo.computerize1.databinding.ActivityFirstBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class FirstActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFirstBinding
@@ -23,6 +24,7 @@ class FirstActivity : AppCompatActivity() {
         )
         binding = ActivityFirstBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         builder = AlertDialog.Builder(this)
 

@@ -7,8 +7,12 @@ import android.widget.Toast
 import com.abisayo.computerize1.databinding.ActivityCreateAccountBinding
 import com.abisayo.computerize1.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DatabaseReference
 
 class CreateAccount : AppCompatActivity() {
+
+    private lateinit var database : DatabaseReference
+
     private lateinit var binding: ActivityCreateAccountBinding
     private lateinit var firebaseAuth : FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
