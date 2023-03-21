@@ -14,6 +14,7 @@ import com.abisayo.computerize1.Games.GameClaraActivity
 import com.abisayo.computerize1.data.Constants
 import com.abisayo.computerize1.databinding.ActivityResultBinding
 import com.abisayo.computerize1.models.Scores
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
@@ -59,14 +60,17 @@ class ResultActivity : AppCompatActivity() {
         val noteTitle = topic
         val studentName = student_name
         val score = "$correctAnswers/${totalQuestions}"
+        val  userID = FirebaseAuth.getInstance().currentUser?.uid
 
         database = FirebaseDatabase.getInstance().getReference("Scores")
-        val Score = Scores(studentName, noteTitle, score)
+        val Score = Scores(studentName,noteTitle, score,  userID)
             if (noteTitle != null) {
-                database.child(noteTitle).setValue(Score).addOnSuccessListener {
-                    Toast.makeText(this, "Successfully Saved", Toast.LENGTH_SHORT).show()
-                }.addOnFailureListener {
-                    Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
+                if (userID != null) {
+                    database.child(userID + noteTitle).setValue(Score).addOnSuccessListener {
+                        Toast.makeText(this, "Successfully Saved", Toast.LENGTH_SHORT).show()
+                    }.addOnFailureListener {
+                        Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
+                    }
                 }
             }
 
