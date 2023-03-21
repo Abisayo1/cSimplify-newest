@@ -12,6 +12,7 @@ import com.abisayo.computerize1.data.Constants
 import com.abisayo.computerize1.data.Flashcards
 import com.abisayo.computerize1.data.startFlowChartActivity
 import com.abisayo.computerize1.databinding.ActivityFlowchartExampleBinding
+import com.davemorrissey.labs.subscaleview.ImageSource
 import com.google.android.material.navigation.NavigationView
 
 class FlowchartExampleActivity : AppCompatActivity() {
@@ -22,6 +23,19 @@ class FlowchartExampleActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityFlowchartExampleBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        binding.exampleImg.setImage(ImageSource.resource(R.drawable.flowchart_diagram))
+        binding.exampleImg2.setImage(ImageSource.resource(R.drawable.flow_eample2))
+        binding.exampleImg3.setImage(ImageSource.resource(R.drawable.flow_example3))
+        binding.exampleImg4.setImage(ImageSource.resource(R.drawable.example_flow4))
+
+        binding.button.setOnClickListener {
+            val intent = Intent(this, EnterNameQuizActivity::class.java)
+            intent.putExtra(Constants.TOPIC, "Flowcharts")
+            startActivity(intent)
+            finish()
+        }
+
 
         supportActionBar?.setTitle("Examples of FlowChart")
 
@@ -75,7 +89,7 @@ class FlowchartExampleActivity : AppCompatActivity() {
                     )
                 }
 
-                R.id.read_more -> {
+                R.id.learn_more -> {
                     val intent = Intent(this, WebViewActivity::class.java)
                     intent.putExtra(Constants.TOPIC, "Flowcharts")
                     startActivity(intent)

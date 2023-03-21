@@ -155,7 +155,7 @@
             app:layout_constraintStart_toStartOf="@+id/next"
             app:layout_constraintTop_toTopOf="@+id/next" />
 
-        <ImageView
+        <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
             android:id="@+id/img_question"
             android:layout_width="300dp"
             android:layout_height="450dp"

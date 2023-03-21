@@ -61,7 +61,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/example" />
 
-            <ImageView
+            <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
                 android:id="@+id/example_img"
                 android:layout_width="500dp"
                 android:layout_height="500dp"
@@ -87,7 +87,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/example_img" />
 
-            <ImageView
+            <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
                 android:id="@+id/example_img2"
                 android:layout_width="400dp"
                 android:layout_height="400dp"
@@ -113,7 +113,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/example_img2" />
 
-            <ImageView
+            <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
                 android:id="@+id/example_img3"
                 android:layout_width="400dp"
                 android:layout_height="400dp"
@@ -139,7 +139,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/example_img3" />
 
-            <ImageView
+            <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
                 android:id="@+id/example_img4"
                 android:layout_width="400dp"
                 android:layout_height="400dp"

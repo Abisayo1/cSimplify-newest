@@ -19,9 +19,12 @@ import com.abisayo.computerize1.flashcard.FlashCardAdapter
 import com.abisayo.computerize1.data.Flashcards
 import com.abisayo.computerize1.data.startAlgorithmFlashcardActivity
 import com.google.android.material.navigation.NavigationView
+import android.widget.TextView
+import android.view.MotionEvent
+import android.view.View
+
 
 class AlgorithmFlashcardActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityHistoryFlashcardBinding
     private lateinit var recyclerView: RecyclerView
     private lateinit var flashCardAdapter: FlashCardAdapter
@@ -31,6 +34,7 @@ class AlgorithmFlashcardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHistoryFlashcardBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         recyclerView = binding.recycler
 
         recyclerView.layoutManager = GridLayoutManager(this, 2)
@@ -153,4 +157,5 @@ class AlgorithmFlashcardActivity : AppCompatActivity() {
 
 
     }
+
 }

@@ -13,6 +13,7 @@ import androidx.core.view.isVisible
 import com.abisayo.computerize1.data.Constants
 import com.abisayo.computerize1.data.Question
 import com.abisayo.computerize1.databinding.ActivityHistoryQuizBinding
+import com.davemorrissey.labs.subscaleview.ImageSource
 
 class HistoryQuizActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -35,6 +36,7 @@ class HistoryQuizActivity : AppCompatActivity(), View.OnClickListener {
         )
         binding = ActivityHistoryQuizBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         topic = intent.getStringExtra(Constants.TOPIC).toString()
         name_student = intent.getStringExtra(Constants.STUDENT_NAME).toString()
@@ -111,7 +113,7 @@ class HistoryQuizActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         binding.question.text = question!!.question
-        binding.imgQuestion.setImageResource(question.image)
+        binding.imgQuestion.setImage(ImageSource.resource(question.image))
         binding.option1.text = question.optionOne
         binding.option2.text = question.optionTwo
         binding.option3.text = question.optionThree

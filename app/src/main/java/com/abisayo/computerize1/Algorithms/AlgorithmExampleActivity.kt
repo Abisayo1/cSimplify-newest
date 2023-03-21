@@ -23,6 +23,13 @@ class AlgorithmExampleActivity : AppCompatActivity() {
         binding = ActivityAlgorithmExampleBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.button.setOnClickListener {
+            val intent = Intent(this, EnterNameQuizActivity::class.java)
+            intent.putExtra(Constants.TOPIC, "Algorithms")
+            startActivity(intent)
+            finish()
+        }
+
         supportActionBar?.setTitle("Examples of Algorithms")
 
         val drawerLayout: DrawerLayout = binding.drawerLayout

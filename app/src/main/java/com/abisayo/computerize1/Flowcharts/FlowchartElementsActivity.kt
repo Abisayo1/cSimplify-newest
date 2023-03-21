@@ -1,5 +1,6 @@
 package com.abisayo.computerize1.Flowcharts
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,6 +24,10 @@ class FlowchartElementsActivity : AppCompatActivity() {
         binding = ActivityFlowchartElementsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.setTitle("Elements of Flowchart")
+
+        binding.button.setOnClickListener {
+            this.startFlowChartActivity(Flashcards.trendSpecializationFlashcard(), 1)
+        }
 
 
 
@@ -75,7 +80,7 @@ class FlowchartElementsActivity : AppCompatActivity() {
                     )
                 }
 
-                R.id.read_more -> {
+                R.id.learn_more -> {
                     val intent = Intent(this, WebViewActivity::class.java)
                     intent.putExtra(Constants.TOPIC, "Flowcharts")
                     startActivity(intent)

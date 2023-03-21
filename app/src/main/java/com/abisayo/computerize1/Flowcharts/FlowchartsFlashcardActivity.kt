@@ -1,5 +1,6 @@
 package com.abisayo.computerize1.Flowcharts
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -115,7 +116,7 @@ class FlowchartsFlashcardActivity : AppCompatActivity() {
                         FlowchartExampleActivity::class.java))
                 }
 
-                R.id.read_more -> {
+                R.id.learn_more -> {
                     val intent = Intent(this, WebViewActivity::class.java)
                     intent.putExtra(Constants.TOPIC, "Flowcharts")
                     startActivity(intent)

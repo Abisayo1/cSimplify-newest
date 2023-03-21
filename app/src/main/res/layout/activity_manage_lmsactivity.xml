@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="112dp"
         android:gravity="center"
-        android:text="Welcome Mrs Ebison"
+        android:text="Welcome Mrs Ebisin"
         android:textColor="#FFFFFF"
         android:textSize="50sp"
         android:textStyle="bold"
