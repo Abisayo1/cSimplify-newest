@@ -27,7 +27,7 @@ class EnterAdminPasswordActivity : AppCompatActivity() {
 
         binding.button.setOnClickListener {
             val password = binding.editTextTextPassword3.text.toString().trim()
-            if (password == "MrsEbison84") {
+            if (password == "MrsEbisin84") {
                 val intent = Intent(this, ManageLMSActivity::class.java)
                 startActivity(intent)
                 overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
